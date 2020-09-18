@@ -14,9 +14,7 @@ soup = BeautifulSoup(html, 'html.parser')
 news = soup.select('div.text_area > strong.title')
 for n in news:
     print(n.text.strip())
-
-
-Insert(news)
+    Insert(n.text.strip())
 
 
     
